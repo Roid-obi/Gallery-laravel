@@ -1,0 +1,46 @@
+.nav-link.active {
+    /* border:solid rgb(84, 84, 255) 2px; */
+    opacity: 0.8;
+    color: purple; /* Ganti dengan warna teks yang sesuai */
+    /* background-color: black; */
+    /* background-image: linear-gradient(45deg, rgb(84, 84, 255), purple); */
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+
+  .nav-link.active i{
+    /* color: rgb(87, 0, 149);  */
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+  }
+
+  .table td, .table th {
+    color: white;
+  }
+  
+  .logo-das{
+    /* border-bottom: solid rgb(84, 84, 255) 1px; */
+    opacity: 10;
+    /* background-image: linear-gradient(45deg, rgb(42, 42, 88), purple); */
+  }
+
+  /* .sidebar{
+    opacity: 0.8;
+    
+  } */
+  /* .main-sidebar a{
+     
+  } */
+
+  body .content-wrapper{
+    /* background-image: linear-gradient(45deg, rgb(39, 39, 51), rgb(87, 0, 149)); */
+    /* background-color: black */
+
+  }
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+  *{
+    /* font-family: 'Poppins', sans-serif; */
+  }
+
+  .small-box{
+    opacity: 0.8;
+  }

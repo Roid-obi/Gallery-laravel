@@ -1,0 +1,178 @@
+
+
+body{
+    background-color: black;
+}
+
+.content-header{
+    /* background-color: rgba(137, 43, 226, 0.671); */
+    height: 100%;
+}
+
+#profl{
+    /* border: solid rgb(115, 159, 255) 3px; */
+    height: 580px;
+    border-radius: 5px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+    background-color: rgba(14, 13, 14, 0.862);
+    /* box-shadow: rgba(255, 228, 196, 0.802) -5px 5px, rgba(0, 0, 0, 0.459) -10px 10px, rgba(255, 228, 196, 0.2) -15px 15px, rgba(255, 228, 196, 0.1) -20px 20px, rgba(255, 228, 196, 0.05) -25px 25px; */
+}
+
+#profl h3{
+    margin-top: 12px;
+}
+
+.benr{
+    background-image: url(../gambar/banr.jpg);
+    background-size: cover;
+    /* border-radius: 7px; */
+    height: 150px;
+    border-radius: 5px;
+    
+   border-bottom: rgba(255, 228, 196, 0.567) 5px solid;
+
+}
+
+
+
+/* sidebar */
+.main-sidebar a{
+    text-decoration: none;
+}
+
+
+.benr img{
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: -80px;
+    border: rgba(255, 228, 196, 0.964) 5px solid;
+
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+   
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Mynerve&display=swap');
+.datep{
+    font-family: 'Jost', sans-serif;
+    font-family: 'Mynerve', cursive;
+    margin-top: 95px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: rgb(199, 200, 204);
+text-shadow: 2px 2px 3px rgba(127, 127, 127, 0.3);
+}
+
+
+.boxki{
+    float: left;
+   
+}
+.boxka{
+    float: right;
+    
+}
+
+
+
+/* btn aksi */
+.butn-hapus{
+    margin-left: 30%;
+    float: left;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+.butn-hapus:hover{
+    color:red;
+}
+
+.butn-info{
+    float: left;
+    margin-left: 10%;
+    /* border: solid 1px blue; */
+    padding: 4px;
+    border-radius: 20px;
+    height: 20;
+    height: 30px;
+    margin-top: -4px;
+    color: black;
+    
+}
+
+
+/* output gambar */
+.outimg{
+    margin-left: 270px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.outimgd{
+    margin-left: 400px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+
+.catag{
+    margin-left: 225px;
+}
+
+.catagch{
+    margin-top: 10px;
+}
+
+
+/* sitebar */
+/* .nav-link.active p{
+    color: bisque;
+} */
+.nav-link.active  {
+    fill: bisque;
+}
+
+.nav-link.active {
+    border:solid #00BFA5  !important; /* Ganti dengan kode warna hijau toska yang diinginkan */
+    color: #fff !important; /* Ganti dengan warna teks yang sesuai */
+  }
+  
+
+.butn-edit-prof {
+
+    background-color: rgb(50, 50, 50);
+    border: solid rgba(255, 228, 196, 0.964) 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-top: 70%;
+    
+}
+
+/* .butn-edit-prof{
+    transition: transform 0.5s ease;
+} */
+
+/* .butn-edit-prof:hover {
+    
+} */
+
+
+.butn-edit-prof svg{
+    /* margin: 6px 0px 0px 6px; */
+    margin: 0 auto;
+    margin-top: 15%;
+    display: flex;
+    object-position: center;
+    color: rgb(199, 200, 204);
+    padding: 1px;
+}
+

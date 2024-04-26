@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+header nav{
+  /* background-image: linear-gradient(45deg, rgb(39, 39, 51), rgb(87, 0, 149)); */
+  /* background-color: rgba(87, 0, 149, 0.718); */
+  background-color: #222222e5;
+  height: 60px;
+  /* opacity: 0.9; */
+  backdrop-filter: blur(10px);
+}
+
+header nav ul li a{
+    color: rgb(157, 157, 157);
+    padding: 5px;
+    text-decoration: none;
+}
+
+header nav ul li a{
+    transition: all 0.2s ease-in 0s;
+}
+
+header nav ul li a:hover{
+    /* color: rgb(84, 84, 255); */
+    color: white;
+    
+}
+
+header nav ul li .active{
+  text-decoration: bold;
+  /* color: rgb(84, 84, 255); */
+  /* border-bottom: 1px rgba(255, 0, 255, 0.713) solid; */
+  color: white;
+  
+}
+
+.carousel-inner{
+  height: 560px;
+}
+
+.bangam1{
+    size: cover;
+}
+
+#navbarwel{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.ban-slideshow{
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: rgba(87, 0, 149, 0.718)
+}
+
+
+.parallax-row {
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* margin-top: 100px; */
+
+  position: relative;
+  background-image: url(../images/skljal.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; /* Sesuaikan dengan tinggi yang diinginkan */
+  width: 100%;
+  z-index: -2;
+}
+
+.parallax-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46); /* Ubah nilai alpha (0.4) sesuai kebutuhan */
+  z-index: -2;
+}
+
+.parallax-row svg{
+  z-index: 2;
+}
+
+.parallax-text {
+  position: absolute;
+  bottom: 30px; /* Sesuaikan jarak teks dari bagian bawah */
+  margin-bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.parallax-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.parallax-text p {
+  font-size: 16px;
+}
+
+
+/* card */
+.card{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 0px;
+    
+}
+.card{
+  transition: all 0.3s ease-in 0s;
+}
+
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.535) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card .imagecard img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.card .imagecard img:hover {
+  transform: scale(1.05);
+  filter: brightness(70%);
+  border-radius: 0px;
+}
+
+
+.catgo-post{
+  position: absolute;
+  z-index: 2;
+}
+
+
+/* gambar hal detail */
+.imgslug{
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* klik akan ke nama klompoknya */
+.namacatego{
+  text-align: right;
+  }
+
+.namatag{
+  color: rgb(0, 8, 255);
+text-align: right;
+}
+
+.namatag:hover{
+  color: black;
+  }
+
+.namatag:hover{
+  color: gray;
+  }
+
+
+
+
+/* share media */
+div#social-links {
+  
+  margin-left: 29.5%;
+  /* background-color: antiquewhite; */
+  max-width: 500px;
+}
+
+div#social-links ul li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+div#social-links ul li a{
+  padding-left: -100px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin: 1px;
+  font-size: 30px;
+  color: #222;
+  background-color: #ccc;
+}
+
+
+.butn-view-post {
+  color: white;
+  /* border: solid rgb(87, 0, 149) 1px ; */
+  /* background-image: linear-gradient(45deg, rgb(84, 84, 255), purple); */
+  background-color: #222222;
+  opacity: 0.7;
+  border: rgb(87, 0, 149);
+  border-radius: 0px;
+}
+
+.butn-view-post:hover{
+  background-color: #222222ef;
+  opacity: 0.6;
+
+}
+
+
+.butn-crl {
+  text-decoration: none;
+  color :rgb(255, 251, 251);
+  opacity: 0.7;
+  /* background-color: rgb(87, 0, 149) ;
+  border: rgb(87, 0, 149) ; */
+  background-color: #222 ;
+  border: rgb(87, 0, 149) ;
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.butn-crl:hover{
+  background-color: rgba(44, 42, 42, 0.758) ;
+}
+
+
+
+
+/* KOMEN */
+
+.comment__container {
+  display: none;
+  position: relative;
+  margin: 20px
+}
+
+.comment__container.opened {
+  display: block;
+}
+
+.comment__container:not(:first-child) {
+  /* margin-left: 3rem; */
+  margin-top: 1rem;
+}
+
+.comment__card {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* border-radius: 0.5rem; */
+  min-width: 100%;
+  /* height: 100px; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.comment__card p{
+  margin-top: 10px;
+}
+
+.comment__card h3,
+.comment__card p {
+  margin-bottom: 2rem;
+}
+
+.comment__card-footer {
+  display: flex;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.show-replies {
+  cursor: pointer;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  /* background-color: rgba(87, 0, 149, 0.718); */
+  background-color: #222222c7;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  animation: bounce 2s infinite;
+}
+
+.back-to-top:hover svg {
+  color: rgba(219, 181, 247, 0.815);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.cursor-animation {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgb(87, 0, 149);
+  pointer-events: none;
+  z-index: 9999;
+  animation: cursorPulse 1s infinite;
+}
+
+@keyframes cursorPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+.trifitur{
+  /* border-top: solid 10px rgb(87, 0, 149); */
+  /* margin-top: 50px; */
+  margin: auto;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  width: 100%;
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+.trifitur .card{
+  /* border-radius: 20px; */
+  width: 400px;
+  border: 0px;
+  margin: auto;
+  opacity: 0.6;
+  background-color: #22222200;
+  backdrop-filter: blur(10px);
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+
+}
+
+/* .trifitur .card svg{
+  padding: 8px;
+  width: 60px;
+  height: 60px;
+  background-color:rgba(255, 255, 255, 0.551);
+  align-items: center;
+  justify-content: center;
+  color: #ffffffb7;
+  backdrop-filter: blur(10px);
+} */
