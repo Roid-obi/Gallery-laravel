@@ -9,7 +9,7 @@
   <meta name="generator" content="Hugo 0.104.2">
   <title>Muh1s | Post Detail</title>
 
-  {{-- <link rel="icon" href="{{ asset('images/SMKlogo.webp') }}" type="image/x-icon"> --}}
+  <link rel="icon" href="{{ asset('images/logo-gallery.png') }}" type="image/x-icon">
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 

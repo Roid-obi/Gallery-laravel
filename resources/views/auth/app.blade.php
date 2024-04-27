@@ -10,7 +10,7 @@
     <title>Gallery | Authentication</title>
 
     {{-- icon --}}
-    {{-- <link rel="icon" href="{{ asset('images/SMKlogo.webp') }}" type="image/x-icon"> --}}
+    <link rel="icon" href="{{ asset('images/logo-gallery.png') }}" type="image/x-icon">
 
 
     <!-- Fonts -->

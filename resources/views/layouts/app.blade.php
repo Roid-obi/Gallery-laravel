@@ -15,7 +15,7 @@
 
     <!-- Scripts -->
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
-    {{-- <link rel="icon" href="{{ asset('images/SMKlogo.webp') }}" type="image/x-icon"> --}}
+    <link rel="icon" href="{{ asset('images/logo-gallery.png') }}" type="image/x-icon">
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">

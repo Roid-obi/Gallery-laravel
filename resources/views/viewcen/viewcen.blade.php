@@ -8,7 +8,7 @@
     <meta name="generator" content="Hugo 0.104.2">
     <title>Gallery</title>
 
-    {{-- <link rel="icon" href="{{ asset('images/SMKlogo.webp') }}" type="image/x-icon"> --}}
+    <link rel="icon" href="{{ asset('images/logo-gallery.png') }}" type="image/x-icon">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
@@ -284,7 +284,9 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+  <div></div>
 
+  <hr class="featurette-divider">
 
   <footer class=" text-center text-lg-start  mt-4" style="background-color: #222222d5;color:white;">
 

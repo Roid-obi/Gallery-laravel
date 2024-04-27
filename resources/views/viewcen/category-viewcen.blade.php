@@ -8,7 +8,7 @@
     <meta name="generator" content="Hugo 0.104.2">
     <title>Gallery | Category Post</title>
 
-    {{-- <link rel="icon" href="{{ asset('images/SMKlogo.webp') }}" type="image/x-icon"> --}}
+    <link rel="icon" href="{{ asset('images/logo-gallery.png') }}" type="image/x-icon">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
@@ -198,17 +198,13 @@
 
 
 
-{{-- <hr class="featurette-divider"> --}}
+<hr class="featurette-divider">
 
 
-<footer class=" text-center text-lg-start  mt-4" style="background-color: #222222d5;color:white;">
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: #222222;color:white">
-    © 2023 Copyright:
-    <a class="text-white" href="https://github.com/Roid-obi">roidrobih.com</a>
-  </div>
-  <!-- Copyright -->
+<!-- FOOTER -->
+<footer class="container">
+  {{-- <p class="float-end"><a class="text-decoration-none text-danger-emphasis" href="#">Back to top</a></p> --}}
+  <p>&copy; Gallery, Mr &middot; <a class="text-decoration-none" href="#">Roid</a></p>
 </footer>
 
 
