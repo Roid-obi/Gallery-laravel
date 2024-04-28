@@ -23,13 +23,13 @@ class ProfileController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required',
-            'kelas' => 'required',
+            'address' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif,webp',
         ]);
 
         $user = Auth::user();
         $user->name = $validatedData['name'];
-        $user->kelas = $validatedData['kelas'];
+        $user->address = $validatedData['address'];
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');

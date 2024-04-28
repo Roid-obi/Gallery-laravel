@@ -11,7 +11,7 @@ class UsersController extends Controller
         $search = $request->input('search');
         $users = User::where('name', 'like', "%$search%")
             ->orWhere('email', 'like', "%$search%")
-            ->orWhere('kelas', 'like', "%$search%")
+            ->orWhere('address', 'like', "%$search%")
             // ->get();
             ->paginate(10); // menampilkan 10 data per halaman
         return view('users', compact('users', 'search'));
@@ -25,13 +25,13 @@ class UsersController extends Controller
         $validatedData = $request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'kelas' => 'required',
+            'address' => 'required',
         ]);
 
         // Update pengguna berdasarkan input
         $user->name = $validatedData['name'] ;
         $user->email = $validatedData['email'];
-        $user->kelas = $validatedData['kelas'];
+        $user->address = $validatedData['address'];
         $user->save();
 
         // Redirect ke halaman daftar pengguna dengan pesan sukses

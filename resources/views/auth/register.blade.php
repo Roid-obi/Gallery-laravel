@@ -36,10 +36,10 @@
 
                         {{-- Kelas --}}
                         <div class="mb-3">
-                            <label for="kelas" class="form-label">{{ __('Kelas') }}</label>
-                            <input id="kelas" type="text" class="form-control @error('kelas') is-invalid @enderror" name="kelas" value="{{ old('kelas') }}" required autocomplete="kelas" autofocus>
+                            <label for="address" class="form-label">{{ __('Address') }}</label>
+                            <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus>
 
-                            @error('kelas')
+                            @error('address')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

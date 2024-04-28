@@ -54,7 +54,7 @@
                             <th>Image</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Kelas</th>
+                            <th>Address</th>
                             @if(Auth::user()->role=='admin')
                             <th>Aksi</th>
                             @endif
@@ -75,7 +75,7 @@
                             </td>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
-                            <td>{{ $user->kelas }}</td>
+                            <td>{{ $user->address }}</td>
                             @if(auth::user()->role=='admin')
                             <td>
                               <!-- Tombol Update -->
@@ -109,8 +109,8 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label for="kelas">Kelas:</label>
-                                                    <input type="text" name="kelas" class="form-control" value="{{ $user->kelas }}">
+                                                    <label for="address">Address:</label>
+                                                    <input type="text" name="address" class="form-control" value="{{ $user->address }}">
                                                 </div>
                                                 
                                             </div>
@@ -190,8 +190,8 @@
                       <input type="email" class="form-control" id="email" name="email" value="{{ $user->email }}" required>
                   </div>
                   <div class="form-group">
-                      <label for="kelas">Kelas</label>
-                      <input type="text" class="form-control" id="kelas" name="kelas" value="{{ $user->kelas }}" required>
+                      <label for="address">Alamat</label>
+                      <input type="text" class="form-control" id="address" name="address" value="{{ $user->address }}" required>
                   </div>
               </div>
               <div class="modal-footer">

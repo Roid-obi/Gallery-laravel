@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('kelas');
+            $table->string('address');
             $table->string('role')->default('user');
             $table->string('image')->nullable();
             $table->string('status')->default('active');

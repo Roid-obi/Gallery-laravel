@@ -321,7 +321,7 @@
                                     </div>
 
                                     <!-- Form Group for Is Pinned -->
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label for="is_pinned">Is Pinned:</label>
                                         <div class="form-check form-switch">
                                           <input class="form-check-input" type="hidden" name="is_pinned" value="0">
@@ -330,7 +330,7 @@
                                             {{ $post->is_pinned == 1 ? 'Di Pin' : 'Tidak Di Pin' }}
                                           </label>
                                         </div>
-                                      </div>
+                                      </div> --}}
 
                             
                                     <!-- Modal Footer -->

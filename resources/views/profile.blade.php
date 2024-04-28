@@ -55,7 +55,7 @@
                                 <b class="text-white">Email</b> <a class="float-right text-decoration-none">{{ Auth::user()->email }}</a>
                             </li>
                             <li class="list-group-item bg-dark">
-                                <b class="text-white">Kelas</b> <a class="float-right text-decoration-none">{{ Auth::user()->kelas }}</a>
+                                <b class="text-white">Alamat</b> <a class="float-right text-decoration-none">{{ Auth::user()->address }}</a>
                             </li>
                         </ul>
 
@@ -101,9 +101,9 @@
                             value="{{ Auth::user()->name }}">
                     </div>
                     <div class="form-group">
-                        <label for="kelas">Kelas</label>
-                        <input type="text" class="form-control" id="kelas" name="kelas"
-                            value="{{ Auth::user()->kelas }}">
+                        <label for="address">Alamat</label>
+                        <input type="text" class="form-control" id="address" name="address"
+                            value="{{ Auth::user()->address }}">
                     </div>
                     <!-- Tambahkan form input untuk data profil lainnya sesuai kebutuhan -->
                     {{-- image --}}

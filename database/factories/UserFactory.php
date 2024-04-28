@@ -20,7 +20,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'kelas' => "XI PPLG 1",
+            'address' => "Indonesia",
             'image' => '',
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
@@ -48,7 +48,7 @@ class UserFactory extends Factory
         return $this->state(fn (array $attributes) => [
             'name' => 'Admin Roid',
             'email' => 'admin@gmail.com',
-            'kelas' => 'XI PPLG 1',
+            'address' => 'Solo',
             'image' => '',
             'password' => '$2y$10$1OuOlqrOpKYhKQGFW93AceY3cZIDclZ.N7jOD2HpxhF.B4SDftDQy',
             'role' => 'admin',    
