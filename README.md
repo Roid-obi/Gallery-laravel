@@ -1,2 +1,4 @@
-Jalankan php artisan serve.
-Lalu Jalankan npm run dev.
+PHP
+Javascript
+Laravel
+Bootstrap
