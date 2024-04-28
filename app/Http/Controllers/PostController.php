@@ -59,7 +59,8 @@ class PostController extends Controller
                 $post->created_by = auth()->user()->name;
                 $post->content = $validatedData['content'];
                 $post->slug = Str::slug($validatedData['title']);
-                $post->is_pinned = $request->input('is_pinned');
+                // Set default value for is_pinned if not provided in request
+                $post->is_pinned = $request->input('is_pinned', false);
         
                 if ($request->hasFile('image')) {
                     $image = $request->file('image');

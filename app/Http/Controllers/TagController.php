@@ -9,11 +9,25 @@ class TagController extends Controller
 {
     public function index(Request $request) {
         $search = $request->input('search');
-        $tags = Tag::where('name', 'like', "%$search%")
-            ->orWhere('created_by', 'like', "%$search%")
-            ->orWhere('description', 'like', "%$search%")
-            // ->get();
-            ->paginate(10); // menampilkan 10 data per halaman
+        $tags = null;
+
+        // Cek peran pengguna
+        if(auth()->user()->role === 'user') {
+            // Jika peran pengguna adalah 'user', ambil tag yang dibuat oleh pengguna tersebut
+            $tags = Tag::where('created_by', auth()->user()->name)
+                        ->where(function ($query) use ($search) {
+                            $query->where('name', 'like', "%$search%")
+                                  ->orWhere('description', 'like', "%$search%");
+                        })
+                        ->paginate(10);
+        } else {
+            // Jika peran pengguna bukan 'user', ambil semua tag
+            $tags = Tag::where('name', 'like', "%$search%")
+                        ->orWhere('created_by', 'like', "%$search%")
+                        ->orWhere('description', 'like', "%$search%")
+                        ->paginate(10);
+        }
+        
         return view('tags', compact('tags', 'search'));
     }
 
