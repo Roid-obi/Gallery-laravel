@@ -40,7 +40,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="{{ route('home') }}" class="nav-link {{ Route::is('home') ? 'active' : '' }}">
+            <a href="{{ route('home') }}" class="nav-link {{ Route::is('home') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home
@@ -48,15 +48,16 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('profile') }}" class="nav-link {{ Route::is('profile') ? 'active' : '' }}">
+            <a href="{{ route('profile') }}" class="nav-link {{ Route::is('profile') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-user-circle"></i>
               <p>
                 Profile
               </p>
             </a>
           </li>
+          @if(Auth::user()->role != 'user')
           <li class="nav-item">
-            <a href="{{ route('users') }}" class="nav-link {{ Route::is('users') ? 'active' : '' }}">
+            <a href="{{ route('users') }}" class="nav-link {{ Route::is('users') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Pengguna
@@ -64,8 +65,9 @@
               </p>
             </a>
           </li>
+          @endif
           <li class="nav-item">
-            <a href="{{ route('post.index') }}" class="nav-link {{ Route::is('post.index') ? 'active' : '' }}">
+            <a href="{{ route('post.index') }}" class="nav-link {{ Route::is('post.index') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-newspaper"></i>
               <p>
                 Postingan
@@ -73,7 +75,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('category.index') }}" class="nav-link {{ Route::is('category.index') ? 'active' : '' }}">
+            <a href="{{ route('category.index') }}" class="nav-link {{ Route::is('category.index') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-th-large"></i>
               <p>
                 Categories
@@ -81,7 +83,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ route('tag.index') }}" class="nav-link {{ Route::is('tag.index') ? 'active' : '' }}">
+            <a href="{{ route('tag.index') }}" class="nav-link {{ Route::is('tag.index') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-hashtag"></i>
               <p>
                 Tags
@@ -97,7 +99,7 @@
             </a>
           </li> --}}
           <li class="nav-item">
-            <a href="{{ route('post-saves.show',['post' => auth()->user()->id ]) }}" class="nav-link {{ Route::is('post-saves.show') ? 'active bg-black' : '' }}">
+            <a href="{{ route('post-saves.show',['post' => auth()->user()->id ]) }}" class="nav-link {{ Route::is('post-saves.show') ? 'active bg-light' : '' }}">
               <i class="nav-icon fas fa-bookmark"></i>
                 <p style="margin-left: 10px;">
                     Saved Post

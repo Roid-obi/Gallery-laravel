@@ -171,34 +171,34 @@
 <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <form action="{{ route('users.update', $user->id) }}" method="POST">
-              @csrf
-              @method('PUT')
-              <div class="modal-header">
-                  <h5 class="modal-title" id="editUserModalLabel">Edit Pengguna</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <div class="form-group">
-                      <label for="name">Nama</label>
-                      <input type="text" class="form-control" id="name" name="name" value="{{ $user->name }}" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" name="email" value="{{ $user->email }}" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="address">Alamat</label>
-                      <input type="text" class="form-control" id="address" name="address" value="{{ $user->address }}" required>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                  <button type="submit" class="btn btn-primary">Simpan</button>
-              </div>
-          </form>
+        <form action="{{ isset($user) ? route('users.update', $user->id) : '#' }}" method="POST">
+            @csrf
+            @method('PUT')
+            <div class="modal-header">
+                <h5 class="modal-title" id="editUserModalLabel">Edit Pengguna</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" class="form-control" id="name" name="name" value="{{ isset($user) ? $user->name : '' }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" value="{{ isset($user) ? $user->email : '' }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Alamat</label>
+                    <input type="text" class="form-control" id="address" name="address" value="{{ isset($user) ? $user->address : '' }}" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+        </form>
       </div>
   </div>
 </div>

@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-indigo">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>{{ $posts->where('is_pinned', true)->count() }}</h3>
 
@@ -45,7 +45,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-primary">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>{{ $posts->count() }}</h3>
 
@@ -60,7 +60,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-warning">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>{{ $user->count() }}</h3>
 
@@ -75,7 +75,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-success">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>{{ $admin->count() }}</h3>
 
@@ -93,7 +93,7 @@
       <div class="row">
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-maroon">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>{{ $categories->count() }}</h3>
 
@@ -108,7 +108,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-pink">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>{{ $tags->count() }}</h3>
 
@@ -123,7 +123,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-info">
+          <div class="small-box bg-white">
             <div class="inner">
               <h3>0</h3>
 

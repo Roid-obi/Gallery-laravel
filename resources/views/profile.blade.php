@@ -31,7 +31,7 @@
             <div class="col-md-3">
 
                 <!-- Profile Image -->
-                <div class="card card-primary card-outline bg-dark">
+                <div class="card bg-dark">
                     <div class="card-body box-profile">
                         <div class="text-center">
                             @if(Auth::user()->image)

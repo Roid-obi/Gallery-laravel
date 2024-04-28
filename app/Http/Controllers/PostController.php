@@ -19,11 +19,23 @@ class PostController extends Controller
         $search = $request->input('search');
         $categories = Category::all();
         $tags = Tag::all();
-        $posts = Post::where('title', 'like', "%$search%")
-            ->orWhere('created_by', 'like', "%$search%")
-            ->orWhere('content', 'like', "%$search%")
-            // ->get();
-            ->paginate(10); // menampilkan 10 data per halaman
+    
+        // Cek jika pengguna memiliki peran 'user'
+        if(auth()->user()->role === 'user') {
+            $posts = Post::where('created_by', auth()->user()->name)
+                         ->where(function ($query) use ($search) {
+                             $query->where('title', 'like', "%$search%")
+                                   ->orWhere('content', 'like', "%$search%");
+                         })
+                         ->paginate(10);
+        } else {
+            // Jika bukan pengguna 'user', tampilkan semua postingan
+            $posts = Post::where('title', 'like', "%$search%")
+                         ->orWhere('created_by', 'like', "%$search%")
+                         ->orWhere('content', 'like', "%$search%")
+                         ->paginate(10);
+        }
+    
         return view('posts', compact('posts', 'categories', 'tags', 'search'));
     }
         
@@ -47,7 +59,7 @@ class PostController extends Controller
                 $post->created_by = auth()->user()->name;
                 $post->content = $validatedData['content'];
                 $post->slug = Str::slug($validatedData['title']);
-                $post->is_pinned = $request->has('is_pinned') ? true : false;
+                $post->is_pinned = $request->input('is_pinned');
         
                 if ($request->hasFile('image')) {
                     $image = $request->file('image');
