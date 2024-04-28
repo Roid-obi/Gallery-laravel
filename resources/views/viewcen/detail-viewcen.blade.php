@@ -373,9 +373,9 @@
                                             name="content" 
                                             class="form-control" 
                                             maxlength="255"
-                                            oninput="document.getElementById('reply_update{{ $comment->id }}').textContent = (255 - this.value.length) + ' karakter tersisa'"
-                                            >{{ $comment->content }}</textarea>
-                                            <div id="reply_update{{ $comment->id }}"></div>
+                                            oninput="document.getElementById('reply_update{{ $reply->id }}').textContent = (255 - this.value.length) + ' karakter tersisa'"
+                                            >{{ $reply->content }}</textarea>
+                                            <div id="reply_update{{ $reply->id }}"></div>
                                         </div>
                                         @error('content')
                                             <span class="invalid-feedback" role="alert">
@@ -457,9 +457,9 @@
                                                     id="content" 
                                                     name="content" 
                                                     class="form-control" 
-                                                    oninput="document.getElementById('reply_reply_update{{ $comment->id }}').textContent = (255 - this.value.length) + ' karakter tersisa'"
-                                                    >{{ $comment->content }}</textarea>
-                                                    <div id="reply_reply_update{{ $comment->id }}"></div>
+                                                    oninput="document.getElementById('reply_reply_update{{ $reply2->id }}').textContent = (255 - this.value.length) + ' karakter tersisa'"
+                                                    >{{ $reply2->content }}</textarea>
+                                                    <div id="reply_reply_update{{ $reply2->id }}"></div>
                                                 </div>
                                                 @error('content')
                                                     <span class="invalid-feedback" role="alert">

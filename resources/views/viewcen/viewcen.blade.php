@@ -286,10 +286,8 @@
   </div><!-- /.container -->
   <div></div>
 
-  <hr class="featurette-divider">
 
   <footer class=" text-center text-lg-start  mt-4" style="background-color: #222222d5;color:white;">
-
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #222222;color:white">
       © 2023 Copyright:
