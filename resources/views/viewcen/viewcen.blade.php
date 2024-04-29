@@ -35,9 +35,14 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+        width: 100%;
+        object-fit: cover;
+        @media (max-width: 768px) {
+          height: 100%;
+        }
       }
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
@@ -158,7 +163,7 @@
         @foreach ($posts->where('is_pinned', true) as $index => $post) 
         <div class="carousel-item @if ($loop->first) active @endif">
           
-          <img class="bd-placeholder-img"  width="100%" height="100%" src="{{ asset('/storage/images/'.$post->image) }}" alt="">
+          <img class="bd-placeholder-img" src="{{ asset('/storage/images/'.$post->image) }}" alt="">
           <div class="container">
             <div class="carousel-caption text-center">
               <h1>{{ $post->title }}</h1>
@@ -188,15 +193,15 @@
 
 
     {{-- posts --}}
-    <hr class="featurette-divider">
+    {{-- <hr class="featurette-divider"> --}}
     
 <main>
 
-  <section class="py-5 text-center container">
+  {{-- <section class="py-5 text-center container">
     
         <h1 class="fw-light">{{ $title }}</h1>
       
-  </section>
+  </section> --}}
 
   <div class="album py-5 bg-light">
     <div class="container">
@@ -272,17 +277,16 @@
 
 
 
-    <hr class="featurette-divider">
+    {{-- <hr class="featurette-divider"> --}}
 
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-  <div></div>
 
 
   <footer class=" text-center text-lg-start  mt-4" style="background-color: #222222d5;color:white;">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: #222222;color:white">
+    <div class="text-center p-3" style="color:white">
       © 2023 Copyright:
       <a class="text-white" href="https://github.com/Roid-obi">roidrobih.com</a>
     </div>
