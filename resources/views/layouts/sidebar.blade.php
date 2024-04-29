@@ -2,7 +2,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="opacity: 0.9">
     <!-- Brand Logo -->
     <a href="/" class="logo-das brand-link text-decoration-none bg-dark">
-      {{-- <img src="{{ asset('images/sewmo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
+      <img src="{{ asset('images/logo-gallery.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light text-decoration-none">Gallery</span>
     </a>
 

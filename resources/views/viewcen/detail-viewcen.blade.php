@@ -137,6 +137,9 @@
                 <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="{{ asset('/storage/images/'.$post->image) }}" alt="" style="border-radius: 0px; object-fit: cover;">
               </div>
               <h2 class="fw-light">{{ $post->title }}</h2>
+              <div class="d-flex justify-content-start">
+                <p>{{ $post->content }}</p>
+              </div>
               <div class="d-flex justify-content-end">
                 @foreach($post->categories as $category)
                 <div class="namacatego btn-outline-secondary btn-sm">
