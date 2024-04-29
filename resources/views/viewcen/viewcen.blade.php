@@ -144,7 +144,7 @@
 <main>
 @if($title != 'Categories' && $title != 'Tags')
   {{-- slide show --}}
- 
+  @if($posts->where('is_pinned', true)->isNotEmpty())
   <div class="ban-slideshow" style="margin-top: -48px;" style="height: 70%">
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       {{-- <div class="carousel-indicators">
@@ -158,7 +158,7 @@
         @foreach ($posts->where('is_pinned', true) as $index => $post) 
         <div class="carousel-item @if ($loop->first) active @endif">
           
-          <img class="bd-placeholder-img"  width="100%" src="{{ asset('/storage/images/'.$post->image) }}" alt="">
+          <img class="bd-placeholder-img"  width="100%" height="100%" src="{{ asset('/storage/images/'.$post->image) }}" alt="">
           <div class="container">
             <div class="carousel-caption text-center">
               <h1>{{ $post->title }}</h1>
@@ -179,17 +179,10 @@
       </button>
     </div>
   </div>
-
- 
-
-
-
-  <div class="container marketing">
-
-
+  @endif
 @endif
 
-
+{{-- <div class="container marketing"> --}}
 
 
 
@@ -241,7 +234,7 @@
                     {{-- <i class="fas fa-tags"></i> --}}
                       @foreach($post->tags as $tag)
                           <div class="namatag btn-outline-secondary btn-sm">
-                              <a class="text-decoration-none text-info" href="{{ route('post.tag', $tag->id) }}">
+                              <a class="text-decoration-none text-dark" href="{{ route('post.tag', $tag->id) }}">
                                   #{{ $tag->name }}
                               </a>
                           </div>

@@ -220,7 +220,7 @@
                     {{-- <i class="fas fa-tags"></i> --}}
                       @foreach($post->tags as $tag)
                           <div class="namatag btn-outline-secondary btn-sm">
-                              <a class="text-decoration-none text-info" href="{{ route('post.tag', $tag->id) }}">
+                              <a class="text-decoration-none text-dark" href="{{ route('post.tag', $tag->id) }}">
                                   #{{ $tag->name }}
                               </a>
                           </div>
