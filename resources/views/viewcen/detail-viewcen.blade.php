@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.104.2">
-  <title>Muh1s | Post Detail</title>
+  <title>Gallery | Post Detail</title>
 
   <link rel="icon" href="{{ asset('images/logo-gallery.png') }}" type="image/x-icon">
 
