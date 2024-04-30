@@ -2,16 +2,13 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\MobilController;
+use App\Http\Controllers\LikePostController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\SopirController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\UsersController;
-use App\Http\Controllers\PostSaveController;
 use App\Http\Controllers\SavePostController;
 use App\Http\Controllers\welcome;
-use App\Http\Middleware\roleCek;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -94,4 +91,12 @@ Route::controller(SavePostController::class)->group(function () {
     Route::get('/post-saves/{post}', 'show')->name('post-saves.show');
     Route::post('/post-saves/{post}', 'store')->name('post-saves.store');
     Route::delete('/post-saves/{post}', 'destroy')->name('post-saves.destroy');
+})->middleware('auth');
+
+// like post
+// Like post
+Route::controller(LikePostController::class)->group(function () {
+    Route::get('/post-likes/{post}', 'show')->name('post-likes.show');
+    Route::post('/post-likes/{post}', 'store')->name('post-likes.store');
+    Route::delete('/post-likes/{post}', 'destroy')->name('post-likes.destroy');
 })->middleware('auth');
